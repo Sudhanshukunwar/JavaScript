@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Practice </h1>
+    <button id="stop">Stop</button>
 </body>
+<script>
+    const sayHitesh = function(){
+        console.log("Sudhanshu");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Sudhanshu his best  and  Superior  then everyone"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
 </html>
